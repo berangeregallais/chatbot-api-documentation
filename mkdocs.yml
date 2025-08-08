@@ -1,4 +1,5 @@
 site_name: Chatbot API Documentation
+site_url: https://berangeregallais.github.io/chatbot-docs
 nav:
   - Home: index.md
   - Quickstart: quickstart.md
