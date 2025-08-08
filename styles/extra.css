@@ -1,0 +1,107 @@
+.playground-container {
+  margin-top: 2em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playground-container input.playground-input {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/* Common button styles */
+.playground-container button {
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 0.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode */
+[data-md-color-scheme="default"] .playground-container label {
+  color: #222;
+}
+
+[data-md-color-scheme="default"] .playground-container input[type="text"]::placeholder {
+  color: #888;
+}
+
+[data-md-color-scheme="default"] .playground-container button {
+  background-color: #0078d7;
+  color: white;
+}
+
+[data-md-color-scheme="default"] .playground-container button:hover {
+  background-color: #005a9e;
+  transform: scale(1.02);
+}
+
+[data-md-color-scheme="default"] .playground-container pre {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .playground-container label {
+  color: #ddd;
+}
+
+[data-md-color-scheme="slate"] .playground-container input[type="text"] {
+  background-color: #1f1f1f;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+[data-md-color-scheme="slate"] .playground-container input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+[data-md-color-scheme="slate"] .playground-container button {
+  background-color: #3390ff;
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .playground-container button:hover {
+  background-color: #1f6fd1;
+  transform: scale(1.02);
+}
+
+[data-md-color-scheme="slate"] .playground-container pre {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+/* Pre block shared style */
+.playground-container pre {
+  padding: 1em;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 16px;
+}
+
+.playground-container pre#output {
+  white-space: pre-wrap;
+  font-size: 14px !important;
+  color: #e0e0e0; 
+  background-color: #2d2d2d;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+
